@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PZ13</title>
+</head>
+<body>
+    <ul>
+    {% if connections %}
+    {% for item in connections %}
+    <li>{{ item }}</li>
+    {% endfor %}
+    {% endif %}
+    {% if fizika %}
+    <p>Сумма зарплат всех тех, кто ведет физику: </p>
+    <li>{{ fizika }}</li>
+    <p>Сумма зарплат всех тех, кто ведет химию: </p>
+    <li>{{ himia }}</li>
+    {% endif %}
+    </ul>
+</body>
+</html>

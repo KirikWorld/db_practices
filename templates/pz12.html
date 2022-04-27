@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PZ12</title>
+</head>
+<body>
+    {% if avg  == 0 or avg %}
+    <p>Среднее арифметическое: {{ avg }}</p>
+    {% endif %}
+
+    {% if count == 0 or count %}
+    <p>Кол-во записей: {{ count }}</p>
+    {% endif %}
+
+    {% if maxvalue == 0 or maxvalue %}
+    <p>Максимальная зарплата: {{ maxvalue }}</p>
+    {% endif %}
+
+    {% if minvalue == 0 or minvalue %}
+    <p>Минимальная зарплата: {{ minvalue }}</p>
+    {% endif %}
+
+    {% if sumvalue == 0 or sumvalue %}
+    <p>Сумма зарплат: {{ sumvalue }}</p>
+    {% endif %}
+    
+</body>
+</html>
